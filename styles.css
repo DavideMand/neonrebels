@@ -262,6 +262,24 @@ h2 {
   padding-bottom: 6px;
 }
 
+.about-meta {
+  align-self: start;
+  display: grid;
+  gap: 18px;
+  min-height: 0;
+}
+
+.about-links {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+}
+
+.about-links .inline-link {
+  white-space: nowrap;
+}
+
 .special {
   background: var(--panel);
   color: var(--text);
@@ -289,6 +307,81 @@ h2 {
 
 .status-bar span:last-child {
   justify-self: end;
+}
+
+.privacy-page {
+  height: auto;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.privacy-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 28px 34px;
+}
+
+.privacy-back {
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.privacy-main {
+  margin: 72px auto 120px;
+  max-width: 760px;
+  width: calc(100% - 68px);
+}
+
+.privacy-main h1 {
+  font-size: 4rem;
+  line-height: 0.9;
+  margin: 24px 0 16px;
+}
+
+.privacy-date {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-bottom: 46px;
+}
+
+.privacy-lead {
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 54px;
+}
+
+.privacy-main section {
+  border-top: 1px solid var(--line);
+  padding: 32px 0;
+}
+
+.privacy-main section h2 {
+  font-size: 1.45rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.privacy-main section p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.privacy-main section p + p {
+  margin-top: 12px;
+}
+
+.privacy-main section a {
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--text);
+  padding-bottom: 2px;
 }
 
 @media (max-width: 760px) {
@@ -366,6 +459,29 @@ h2 {
 
   .status-bar {
     display: none;
+  }
+
+  .privacy-header {
+    padding: 22px;
+  }
+
+  .privacy-main {
+    margin: 48px auto 80px;
+    width: calc(100% - 44px);
+  }
+
+  .privacy-main h1 {
+    font-size: 2.8rem;
+    line-height: 0.95;
+  }
+
+  .privacy-lead {
+    font-size: 1.08rem;
+    margin-bottom: 42px;
+  }
+
+  .privacy-main section {
+    padding: 26px 0;
   }
 }
 
